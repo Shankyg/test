@@ -65,6 +65,7 @@ function leave(carNumber, hours){
         let index = lot.indexOf(carNumber);
         lot[index]=0;
         empty.push(index);
+        empty.sort();
         console.log(`Registration Number ${carNumber} from Slot ${index+1} has left with Charge ${charge}`)
     }
     else{
